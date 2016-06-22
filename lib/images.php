@@ -36,7 +36,13 @@ function my_column_action( $column ) {
 	}
 }
 
-/*-- https://wordpress.org/support/topic/make-first-image-in-post-featured-if-no-featured-is-set --*/
+/*-- 
+Testing Uses featured image, if no featured image uses first image in the post, and if no post image uses a default selected image. 
+https://developer.wordpress.org/reference/functions/has_post_thumbnail/
+https://wordpress.org/support/topic/make-first-image-in-post-featured-if-no-featured-is-set 
+http://wordpress.stackexchange.com/questions/60245/get-first-image-in-a-post 
+http://www.wpbeginner.com/beginners-guide/how-to-add-featured-image-or-post-thumbnails-in-wordpress/
+--*/
 
 function catch_that_image() {
   if ( has_post_thumbnail() ) {
