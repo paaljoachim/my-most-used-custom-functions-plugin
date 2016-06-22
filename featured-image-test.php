@@ -8,7 +8,11 @@ function catch_that_image() {
   $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
   $first_img = $matches[1][0];
 
-  if(empty($first_img)) { // Defines a default image.
+  if ( has_post_thumbnail() ) {
+    the_post_thumbnail();
+  }
+  
+ elseif (empty($first_img)) { 
     $first_img = "/path/to/default.png";
   }
   return $first_img;
