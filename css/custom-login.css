@@ -1,0 +1,85 @@
+/* Add your own background image */
+body.login {
+    background: #fbc44e url('../images/Blue-bubbles.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #EEE;
+    padding-top: 0;
+}
+ 
+#login {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#login h1 {  
+	padding-top: 20px;
+}
+ 
+ /* Add your logo here */ 
+#login h1 a { 
+	 /* width: 294px;
+	 height: 132px;
+	 background: url('../images/easy-web-design-tutorials-logo.png') no-repeat left top; */
+ }
+ 
+ 
+#login form {    
+    box-shadow:0 2px 3px #444 !important;
+    border-radius: 7px;
+    background: #eeecec;
+    font-size: 18px;
+}
+
+.login label {
+	font-size: 14px;
+}
+ 
+/* Lost your password? and back to site text. */ 
+.login #nav {
+     margin: 15px 0 0 40px;
+     
+}
+ 
+ /* Lost your password? link */
+.login #nav a, .login #backtoblog a {
+    color: #0085ba;    
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+    
+    background: #eeecec;
+    border-radius: 3px;  
+}
+
+.login .message, .press-this #message {
+	background-color: #fff;
+	border-left: 4px solid #7ad03a;
+	
+	box-shadow: 0 4px 18px #1D2736;
+	border-radius: 5px;
+}
+
+/* Hides back to site arrow and text */
+p#backtoblog {
+  display: none;
+}
+
+
+/* Timed out pop up dialog box */
+#wp-auth-check-wrap #wp-auth-check {
+	position: fixed;
+	left: 50%;
+	overflow: hidden;
+	top: 40px;
+	bottom: 20px;
+	max-height: 415px;
+	width: 500px;   			/* changed */
+	margin: 0 0 0 -190px;
+	padding: 30px 0 0;
+	background-color: #eee;
+	z-index: 1000011;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.3);
+	box-shadow: 0 3px 6px rgba(0,0,0,.3);
+}

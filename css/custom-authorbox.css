@@ -1,0 +1,196 @@
+/* Inspired by:
+https://wpbeaches.com/author-box-genesis/ 
+http://www.wpbeginner.com/wp-tutorials/how-to-add-an-author-info-box-in-wordpress-posts/
+*/
+
+
+/* Hide default author box */
+.author-info {
+	display: none;
+}
+
+
+/* The new author box */
+.author_bio_section{
+	background: none repeat scroll 0 0 #F5F5F5;
+	padding: 15px 12px 75px 18px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 3px 3px #444;
+}
+
+.author_bio_section a{
+	text-decoration: none;
+	box-shadow: none !important;	
+}
+
+.author_bio_section a:hover{
+	color: red;	
+}
+
+
+
+/* About and author name or nick */
+.author_name{
+	font-size:16px;
+}
+
+/* surrounding avatar image */
+.author_image {
+	float: left;
+	margin: 0 15px 0 0;
+	background: red;
+	
+	border-radius: 5px !important;
+	border: 1px solid #ccc;
+	box-shadow: 0px 1px 1px #ccc;
+}
+
+/* avatar image */
+.avatar {
+ border-radius: 5px !important;
+}
+
+
+/* View all posts by and website link */
+.author_links {
+	margin: 0;
+	float: left;
+	padding: 0 20px 0 0;
+}
+
+
+.social-links {
+	border: 1px solid #333 !important;
+}
+
+/* Social icon images */
+.social-icons {
+	padding: 1px;
+	margin: -10px 10px 0 0;
+	float: left;
+}
+
+.social-icons:hover {
+	color: #fa7777; 
+	box-shadow: 0px 3px 5px #444;
+}
+
+
+.fa {
+	padding: 4px;
+	margin: -10px 10px 0 0;
+	float: left;
+	
+	background: #205D7A;
+	color: #fff;
+	
+	border-radius: 5px;
+	transition-property: opacity;
+	transition-delay: 0.3s;
+	transition-duration: .5s; 
+	border: 1px solid #333;
+}
+
+.fa:hover {
+	background: #005781;
+	box-shadow: 0px 3px 5px #444;
+}
+
+@media only screen and (max-width: 1250px) {
+	.fa {
+		padding: 4px;
+		margin: -10px 10px 0 2px;
+		font-size: 36px;
+		/* background: red; */
+	}
+	
+	.social-icons {
+		width: 45px;
+	}
+
+}
+
+
+@media only screen and (max-width: 1150px) {
+	.fa {
+		padding: 3px;
+		margin: -10px 10px 0 -7px;
+		/* background: green; */
+	}
+	
+	.social-icons {
+		width: 42px;
+	}
+
+}
+
+
+@media only screen and (max-width: 650px) {
+	.fa {
+		padding: 3px;
+		margin: -10px 10px 0 -7px;
+		/* background: green; */
+	}
+	
+	.author_bio_section{
+		padding: 15px 5px 75px 5px;
+	}
+	
+	
+	.social-icons {
+		width: 35px;
+	}
+
+}
+
+
+@media only screen and (max-width: 510px) {
+	.fa {
+		padding: 1px;
+		margin: -10px 10px 0 -11px;
+		/* background: blue; */
+	}
+	
+	.social-icons {
+		width: 30px;
+	}
+
+}
+
+
+/* --- Tooltip --- */
+
+/* black up arrow */
+.tooltip:hover:before{
+ border: solid;
+ border-color: #005781 transparent;
+ border-width: 0 7px 7px 7px;
+ top: 35px;
+ content: "";
+ left: 40%;
+ position: absolute;
+ z-index: 99; 
+ opacity: .8;
+}
+
+.tooltip {
+ display: inline;
+ position: relative;
+ right: 8%;
+ 
+}
+
+/* black tool tip title box */
+.tooltip:hover:after{
+ background: #005781;
+ background: rgba(32,93,122, .9);
+ border-radius: 5px;
+ top: 40px;
+ color: #fff;
+ content: attr(title);
+ left: 40%;
+ padding: 5px 8px;
+ position: absolute;
+ z-index: 98;
+ width: 110px;
+}

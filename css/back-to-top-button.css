@@ -1,0 +1,120 @@
+
+/* Back to top */
+
+back-to-top-button {
+	height:50px;
+	width:50px;
+	position:fixed;
+	right:5px;
+	bottom:5px;
+	z-index:1;
+	background-image: url("http://example.com/wp-content/uploads/2015/01/topbutton.png");
+	background-repeat:no-repeat;
+	display:none;
+}
+
+
+
+.tooltip{
+    display: inline;
+    position: relative;
+    float: right;
+    margin: -8px 0 0 0;
+    padding: 0.6em 1.7em;
+    color: #fff;
+    /* background: #000; */
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    text-align:center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+ a.tooltip:hover {
+ color: red;
+ }
+ /*.tooltip:hover:after{
+ background: #ccc;
+ background: rgba(0,0,0,.8);
+ border-radius: 5px;
+ bottom: 45px;
+ color: #fff;
+ content: attr(title);
+ right: 110%;
+ bottom: 5%;
+ padding: 5px 5px;
+ position: absolute;
+ z-index: 98;
+ width: 90px;
+ }*/
+ .tooltip:hover:before{
+ border: none;
+ border-color: #333 transparent;
+ border-width: 6px 6px 6px0 6px;
+ bottom: 40px;
+ content: "back to top";
+ font-size: 12px;
+ width: 110px;
+ position: absolute;
+ z-index: 99;
+ color: #fff;
+ right: 1%;
+ }
+ 
+ 
+ 
+ /*----*/
+ 
+ /* The class tooltip is used in the go to top code above */
+ .tooltip{
+     display: inline;
+     position: relative;
+     float: right;
+     margin: -8px 0 0 0;
+     padding: 0.6em 1.7em;
+     color: #fff;
+     /* background: #000; */
+     -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+     -o-transition: all .2s linear;
+     transition: all .2s linear;
+     text-align:center;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     border-radius: 12px;
+     border: 1px solid #ccc;
+ }
+  a.tooltip:hover {
+  color: red;
+  }
+  /*.tooltip:hover:after{
+  background: #ccc;
+  background: rgba(0,0,0,.8);
+  border-radius: 5px;
+  bottom: 45px;
+  color: #fff;
+  content: attr(title);
+  right: 110%;
+  bottom: 5%;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 98;
+  width: 90px;
+  }*/
+  .tooltip:hover:before{
+  border: none;
+  border-color: #333 transparent;
+  border-width: 6px 6px 6px0 6px;
+  bottom: 40px;
+  content: "back to top";
+  font-size: 12px;
+  width: 110px;
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  right: 1%;
+  }
+ 
