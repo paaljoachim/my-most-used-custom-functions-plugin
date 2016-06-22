@@ -1,6 +1,14 @@
-/* Testing Uses featured image, if no featured image uses first image in the post, and if no post image uses a default selected image. */
+/* Testing Uses featured image, if no featured image uses first image in the post, and if no post image uses a default selected image. 
+https://developer.wordpress.org/reference/functions/has_post_thumbnail/
+*/
 
 function catch_that_image() {
+
+ if ( has_post_thumbnail() ) {
+    the_post_thumbnail();
+  }
+  
+elseif 
   global $post, $posts;
   $first_img = '';
   ob_start();
@@ -8,10 +16,6 @@ function catch_that_image() {
   $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
   $first_img = $matches[1][0];
 
-  if ( has_post_thumbnail() ) {
-    the_post_thumbnail();
-  }
-  
  elseif (empty($first_img)) { 
     $first_img = "/path/to/default.png";
   }
