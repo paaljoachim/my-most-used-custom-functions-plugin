@@ -13,3 +13,7 @@ function catch_that_image() {
   }
   return $first_img;
 }
+
+
+/* http://wordpress.stackexchange.com/questions/60245/get-first-image-in-a-post */
+
