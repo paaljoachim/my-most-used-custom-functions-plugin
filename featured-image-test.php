@@ -23,5 +23,7 @@ elseif
 }
 
 
-/* http://wordpress.stackexchange.com/questions/60245/get-first-image-in-a-post */
+/* http://wordpress.stackexchange.com/questions/60245/get-first-image-in-a-post 
+http://www.wpbeginner.com/beginners-guide/how-to-add-featured-image-or-post-thumbnails-in-wordpress/
+*/
 
