@@ -55,7 +55,7 @@ function catch_that_image() {
     $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
     $first_img = $matches[1][0];
     if (empty($first_img)) { //If no post image then use a default image.
-      $first_img = '<img src="' . plugins_url( 'images/sunset.jpg', dirname(__FILE__) ) . '" > ';
+      echo $first_img = '<img src="' . plugins_url( 'images/sunset.jpg', dirname(__FILE__) ) . '" > ';
     }
   }
   return $first_img;
